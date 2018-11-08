@@ -11,14 +11,9 @@ body {
   margin: 0;
 }
 
-.img-flex, .img-logo {
+.img-flex {
   display: block;
   width: 100%;
-}
-
-.logo {
-  position: absolute;
-  left: 0;
 }
 
 .banner {
@@ -29,12 +24,15 @@ body {
 
 .banner-content {
   position: absolute;
-  bottom: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
   width: 100%;
   max-width: 45em;
-  padding-left: 18rem;
+  padding: 0 1em;
 }
 
 .banner-content p {
@@ -59,6 +57,14 @@ body {
   text-decoration: none;
   font-size: 1.125rem;
   font-weight: bold;
+}
+
+.description {
+  width: 60%;
+}
+
+.logo {
+  width: 32%;
 }
 
 .btn-big {
